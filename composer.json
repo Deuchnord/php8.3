@@ -1,0 +1,23 @@
+{
+    "name": "deuchnord/php8.3-demo",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Deuchnord\\Php83Demo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Deuchnord",
+            "email": "jerome@deuchnord.fr"
+        }
+    ],
+    "require": {
+        "php": "8.2.*"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.39",
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^10.4"
+    }
+}
