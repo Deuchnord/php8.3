@@ -6,7 +6,7 @@ use Deuchnord\Php83Demo\Exception\InvalidDateTimeException;
 
 class Universe
 {
-    public const ANSWER = 42;
+    public const int ANSWER = 42;
 
     public function getAnswer(): int
     {
@@ -17,7 +17,7 @@ class Universe
     {
         try {
             return new \DateTimeImmutable($str);
-        } catch (\Exception $e) {
+        } catch (\DateMalformedStringException $e) {
             throw new InvalidDateTimeException($str);
         }
     }

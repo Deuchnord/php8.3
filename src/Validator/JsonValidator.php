@@ -6,11 +6,6 @@ class JsonValidator
 {
     public function isValid(string $json): bool
     {
-        try {
-            json_decode($json, flags: JSON_THROW_ON_ERROR);
-            return true;
-        } catch (\JsonException) {
-            return false;
-        }
+        return json_validate($json);
     }
 }
